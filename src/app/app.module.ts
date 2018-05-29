@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { SimpComponent } from './simp/simp.component';
 // import our module 
 import { HeaderModule } from './modules/header/header.module';
-import { HeaderrModule } from './modules/headerr/headerr.module';
+import { ListModuleModule } from './modules/list-module/list-module.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { HeaderrModule } from './modules/headerr/headerr.module';
   imports: [
     BrowserModule,
     HeaderModule, // import it into our @NgModule block
-    HeaderrModule
+    ListModuleModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
