@@ -7,6 +7,9 @@
 
 # dependencies
 /node_modules
+/dist
+.ng_pkg_build
+dist.tgz
 
 # IDEs and editors
 /.idea

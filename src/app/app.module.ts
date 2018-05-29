@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SimpComponent } from './simp/simp.component';
+// import our module 
+import { HeaderModule } from './modules/header/header.module';
+import { HeaderrModule } from './modules/headerr/headerr.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,9 @@ import { SimpComponent } from './simp/simp.component';
     SimpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeaderModule, // import it into our @NgModule block
+    HeaderrModule
   ],
   providers: [],
   bootstrap: [AppComponent]
